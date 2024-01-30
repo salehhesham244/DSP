@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Courses/K.W/Projetcs/Project 1
+vDMUX
+!s110 1691889124
+!i10b 1
+!s100 `>MK116e:^EJIB>]3zig70
+I8QZIQZagN7Y;EdB@J[6N[2
+R0
+w1691884301
+8DMUX.v
+FDMUX.v
+!i122 14
+L0 1 38
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 OL;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1691889124.000000
+!s107 DMUX.v|
+!s90 DMUX.v|
+!i113 0
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+n@d@m@u@x
+vDSP48A1
+!s110 1691889123
+!i10b 1
+!s100 Ma`C>iLZ?S7QTi3WS7VcT3
+I1IjN1B`26A`dk3h?7:28G1
+R0
+w1691889121
+8DSP48A1.v
+FDSP48A1.v
+!i122 13
+L0 1 97
+R1
+R2
+r1
+!s85 0
+31
+!s108 1691889123.000000
+!s107 DSP48A1.v|
+!s90 DSP48A1.v|
+!i113 0
+R3
+R4
+n@d@s@p48@a1
+vMUX
+!s110 1691889127
+!i10b 1
+!s100 `A_[UNV6^VKPE1>CJa8Fo0
+IU`;iz1Iaf^>D]S@Zng`hK0
+R0
+w1691887766
+8MUX.v
+FMUX.v
+!i122 15
+L0 1 23
+R1
+R2
+r1
+!s85 0
+31
+!s108 1691889126.000000
+!s107 MUX.v|
+!s90 MUX.v|
+!i113 0
+R3
+R4
+n@m@u@x

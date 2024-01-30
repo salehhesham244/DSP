@@ -1,0 +1,523 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Aug 13 04:07:38 2023
+# Process ID: 18048
+# Current directory: D:/Courses/K.W/Projetcs/Project 1/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log DSP48A1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DSP48A1.tcl
+# Log file: D:/Courses/K.W/Projetcs/Project 1/project_1/project_1.runs/synth_1/DSP48A1.vds
+# Journal file: D:/Courses/K.W/Projetcs/Project 1/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DSP48A1.tcl -notrace
+Command: synth_design -top DSP48A1 -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6168 
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A1 [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:1]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 368.957 ; gain = 111.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DSP48A1' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:1]
+	Parameter A0REG bound to: 0 - type: integer 
+	Parameter A1REG bound to: 1 - type: integer 
+	Parameter B0REG bound to: 0 - type: integer 
+	Parameter B1REG bound to: 1 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter DREG bound to: 1 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYOUTREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'DMUX' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+	Parameter width bound to: 18 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DMUX' (1#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+WARNING: [Synth 8-689] width (32) of port connection 'D' does not match port width (18) of module 'DMUX' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:67]
+INFO: [Synth 8-6157] synthesizing module 'DMUX__parameterized0' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+	Parameter width bound to: 48 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DMUX__parameterized0' (1#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+INFO: [Synth 8-6157] synthesizing module 'DMUX__parameterized1' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+	Parameter width bound to: 36 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DMUX__parameterized1' (1#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+INFO: [Synth 8-6157] synthesizing module 'DMUX__parameterized2' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+	Parameter width bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DMUX__parameterized2' (1#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+WARNING: [Synth 8-689] width (32) of port connection 'D' does not match port width (1) of module 'DMUX__parameterized2' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:73]
+INFO: [Synth 8-6157] synthesizing module 'DMUX__parameterized3' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+	Parameter width bound to: 2 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DMUX__parameterized3' (1#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:123]
+WARNING: [Synth 8-689] width (1) of port connection 'out' does not match port width (2) of module 'DMUX__parameterized3' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:76]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:99]
+	Parameter widthA bound to: 36 - type: integer 
+	Parameter widthB bound to: 48 - type: integer 
+	Parameter widthC bound to: 48 - type: integer 
+	Parameter widthout bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (2#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:99]
+WARNING: [Synth 8-689] width (1) of port connection 'S' does not match port width (2) of module 'MUX' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized0' [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:99]
+	Parameter widthA bound to: 48 - type: integer 
+	Parameter widthB bound to: 48 - type: integer 
+	Parameter widthC bound to: 48 - type: integer 
+	Parameter widthout bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized0' (2#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:99]
+WARNING: [Synth 8-3848] Net PCOUT in module/entity DSP48A1 does not have driver. [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:45]
+WARNING: [Synth 8-3848] Net P in module/entity DSP48A1 does not have driver. [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48A1' (3#1) [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:1]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[47]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[46]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[45]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[44]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[43]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[42]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[41]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[40]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[39]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[38]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[37]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[36]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[35]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[34]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[33]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[32]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[31]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[30]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[29]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[28]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[27]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[26]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[25]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[24]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[23]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[22]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[21]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[20]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[19]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[18]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[17]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[16]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[15]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[14]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[13]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[12]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[11]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[10]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[9]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[8]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[7]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[6]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[5]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[4]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[3]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[2]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[1]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[0]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port cin
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[17]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[16]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[15]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[14]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[13]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[12]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[11]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[10]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[9]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[8]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[7]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[6]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[5]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[4]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[3]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[2]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[1]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port BCIN[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 401.484 ; gain = 144.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 401.484 ; gain = 144.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 401.484 ; gain = 144.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:86]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:87]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 401.484 ; gain = 144.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               36 Bit    Registers := 1     
+	               18 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 2     
+	   4 Input     48 Bit        Muxes := 2     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DSP48A1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module DMUX 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+Module DMUX__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+Module DMUX__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module DMUX__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DMUX__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 1     
+Module MUX__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element dutP/Q_reg was removed.  [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:137]
+DSP Report: Generating DSP mult_out, operation Mode is: C+A*B.
+DSP Report: operator mult_out is absorbed into DSP mult_out.
+DSP Report: operator mult_out is absorbed into DSP mult_out.
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[47]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[46]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[45]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[44]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[43]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[42]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[41]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[40]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[39]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[38]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[37]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[36]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[35]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[34]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[33]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[32]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[31]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[30]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[29]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[28]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[27]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[26]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[25]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[24]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[23]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[22]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[21]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[20]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[19]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[18]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[17]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[16]
+WARNING: [Synth 8-3331] design DSP48A1 has unconnected port PCOUT[15]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[17]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[16]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[15]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[14]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[13]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[12]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[11]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[10]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[9]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[8]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[7]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[6]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[5]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[4]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[3]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[2]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[1]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutB0/Q_reg[0]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[17]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[16]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[15]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[14]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[13]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[12]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[11]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[10]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[9]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[8]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[7]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[6]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[5]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[4]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[3]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[2]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[1]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (dutA0/Q_reg[0]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (opm01/Q_reg[1]) is unused and will be removed from module DSP48A1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DSP48A1     | C+A*B       | 18     | 17     | 35     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [D:/Courses/K.W/Projetcs/Project 1/DSP48A1.v:88]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    28|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     1|
+|5     |LUT2    |    37|
+|6     |LUT3    |    36|
+|7     |LUT4    |    72|
+|8     |LUT5    |    47|
+|9     |LUT6    |     1|
+|10    |FDRE    |    94|
+|11    |IBUF    |   171|
+|12    |OBUF    |   104|
+|13    |OBUFT   |    48|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-----------------------+------+
+|      |Instance |Module                 |Cells |
++------+---------+-----------------------+------+
+|1     |top      |                       |   641|
+|2     |  X      |MUX                    |    35|
+|3     |  Z      |MUX__parameterized0    |    36|
+|4     |  dutA1  |DMUX                   |     1|
+|5     |  dutB1  |DMUX_0                 |    19|
+|6     |  dutC   |DMUX__parameterized0   |    48|
+|7     |  dutCYI |DMUX__parameterized2   |     3|
+|8     |  dutCYO |DMUX__parameterized2_1 |     1|
+|9     |  dutD   |DMUX_2                 |    41|
+|10    |  opm01  |DMUX__parameterized3   |    92|
+|11    |  opm23  |DMUX__parameterized3_3 |    14|
+|12    |  opm4   |DMUX__parameterized2_4 |     1|
+|13    |  opm5   |DMUX__parameterized2_5 |     1|
+|14    |  opm6   |DMUX__parameterized2_6 |    18|
+|15    |  opm7   |DMUX__parameterized2_7 |     6|
++------+---------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 181 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 541.953 ; gain = 284.746
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 674.543 ; gain = 430.176
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Courses/K.W/Projetcs/Project 1/project_1/project_1.runs/synth_1/DSP48A1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DSP48A1_utilization_synth.rpt -pb DSP48A1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 674.543 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 13 04:08:22 2023...
